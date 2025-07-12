@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yoontae Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', 'Arial', sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+    }
+
+    .logo a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .musicking-banner {
+      width: 100%;
+      height: 180px;
+      background-color: #667b68;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .musicking-text {
+      text-align: center;
+      color: white;
+    }
+
+    .musicking-text .main-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    section {
+      padding: 80px 40px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      background-color: #e0e0e0;
+      display: block;
+    }
+
+    .text-content {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.6;
+      min-width: 250px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .text-content p {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .section-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">yoontae Lee</a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="music.html">Music</a>
+    </nav>
+  </header>
+
+  <div class="musicking-banner">
+    <div class="musicking-text">
+      <div class="main-title">Music</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-title">Music</div>
+    <div class="section-content">
+      <img class="profile-img" src="https://via.placeholder.com/200" alt="Music Image" />
+      <div class="text-content">
+        <p>This section features your musical projects, performances, and stylistic preferences.</p>
+        <p>You can include links to your SoundCloud, YouTube, Bandcamp, or any music content you have created or contributed to.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Yoontae Lee. All rights reserved.
+  </footer>
+</body>
+</html>

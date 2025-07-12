@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yoontae Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', 'Arial', sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+    }
+
+    .logo a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .musicking-banner {
+      width: 100%;
+      height: 180px;
+      background-color: #667b68;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .musicking-text {
+      text-align: center;
+      color: white;
+    }
+
+    .musicking-text .main-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    section {
+      padding: 80px 40px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      background-color: #e0e0e0;
+      display: block;
+    }
+
+    .text-content {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.6;
+      min-width: 250px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .text-content p {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .section-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">yoontae Lee</a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="music.html">Music</a>
+    </nav>
+  </header>
+
+  <div class="musicking-banner">
+    <div class="musicking-text">
+      <div class="main-title">Musicking</div>
+      <div class="sub-title">From music +‎ -ing, Christopher Small (1927–2011).</div>
+      <div class="description">Any activity involving or related to music performance, such as performing, listening, rehearsing, or composing.</div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="section-title">About</div>
+    <div class="section-content">
+      <img class="profile-img" src="IMG_1174.jpg" alt="Profile Image">
+      <div class="text-content">
+        <p>I study Music Informatics, an interdisciplinary field at the intersection of music, psychology, and artificial intelligence. My research explores how the brain perceives, processes, and generates music as an artistic act—using computational approaches and cognitive psychology frameworks. I'm particularly interested in music cognition and neuroscience, music generation, and real-time music control.</p>
+        <p>Music has always been a central part of my life. During my school years, I constantly asked myself why I loved music so deeply. That curiosity led me to major in Psychology at Seoul National University. I’m now working toward my lifelong goal: turning my passion into my profession.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Yoontae Lee. All rights reserved.
+  </footer>
+</body>
+</html>
